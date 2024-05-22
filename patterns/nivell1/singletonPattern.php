@@ -22,10 +22,11 @@ class Tigger {
     private bool $stripes;
     private string $color;
 
-    private function __construct(bool $stripes, string $color) { 
-        $this->roars = 0; 
-        $this->stripes = $stripes;
-        $this->color = $color;
+
+    private function __construct() { 
+        $this->roars = 0;
+        $this->stripes = false;
+        $this->color = "";
     }
 
     public static function getInstance(): Tigger {
@@ -46,7 +47,40 @@ class Tigger {
         return $this->roars;
     }
 
+    public function setStripes(bool $stripes): void {
+        $this->stripes = $stripes;
+    }
+
+    public function setColor(string $color): void {
+        $this->color = $color;
+    }
+
+    public function getColor(): string {
+        return $this->color;
+    }
+
+    public public getStripes(): bool {
+        return $this->stripes;
+    }
+
+    public function __toString(): string {
+        return "Tigger has " . $this->getColor() . " fur and it's " . $this->getStripes . " he has stripes."
+    }
+
 }
+
+$tigger = Tigger::getInstance();
+
+echo $tigger->roar();
+echo $tigger->roar();
+echo $tigger->roar();
+
+echo "Number of roars: " . $tigger->getRoars();
+
+$tigger->setColor("orange");
+$tigger->setStripes(true);
+
+
 
 
 
