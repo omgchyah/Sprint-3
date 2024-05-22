@@ -29,6 +29,7 @@ class Tigger {
         $this->color = "";
     }
 
+    //getInstance Method
     public static function getInstance(): Tigger {
         if (self::$instance === null) {
             self::$instance = new self();
@@ -36,6 +37,7 @@ class Tigger {
         return self::$instance;
     }
 
+    //Method produce Roar
     public function roar(): string {
 
         $this->roars++;
@@ -43,10 +45,12 @@ class Tigger {
         return "Grrr!" . PHP_EOL;
     }
 
+    //Roar counter
     public function getRoars() {
         return $this->roars;
     }
 
+    //Setters
     public function setStripes(bool $stripes): void {
         $this->stripes = $stripes;
     }
@@ -55,30 +59,37 @@ class Tigger {
         $this->color = $color;
     }
 
+    //Getters
     public function getColor(): string {
         return $this->color;
     }
 
-    public public getStripes(): bool {
+    public function getStripes(): bool {
         return $this->stripes;
     }
 
+    //toString
     public function __toString(): string {
-        return "Tigger has " . $this->getColor() . " fur and it's " . $this->getStripes . " he has stripes."
+        return "Tigger has " . $this->getColor() . " fur and it's " . $this->getStripes() . " he has stripes. "
+        . "He has roared " . $this->getRoars() . " times." . PHP_EOL;
     }
 
 }
 
+//Create unique instance of object
 $tigger = Tigger::getInstance();
 
+//Multiple roars
 echo $tigger->roar();
 echo $tigger->roar();
 echo $tigger->roar();
 
-echo "Number of roars: " . $tigger->getRoars();
+echo "Number of roars: " . $tigger->getRoars() . PHP_EOL;
 
 $tigger->setColor("orange");
 $tigger->setStripes(true);
+
+echo $tigger;
 
 
 
