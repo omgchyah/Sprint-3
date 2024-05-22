@@ -1,0 +1,10 @@
+Patrones creacionales
+
+Mecanismos de creación de objetos que incrementan la flexibilidad y la reutilización del código existente.
+
+1. Factory Method es un patrón de diseño creacional que proporciona una interfaz para crear objetos en una superclase, mientras permite a las subclases alterar el tipo de objetos que se crearán.
+
+2. Abstract Factory
+
+3. Builder
+Para evitar constructores teléscopicos cuando un objeto resulta demasiado complejo o tiene demasiados atributos

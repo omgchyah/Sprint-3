@@ -1,0 +1,23 @@
+The SOLID Principles
+S — Single Responsibility
+	A class should have a single responsibility
+O — Open-Closed
+	Classes should be open for extension, but closed for modification
+L — Liskov Substitution
+	If S is a subtype of T, then objects of type T in a program may be replaced with objects of type S without altering any of the desirable properties of that program.
+I — Interface Segregation
+	Clients should not be forced to depend on methods that they do not use.
+D — Dependency Inversion
+    - High-level modules should not depend on low-level modules. Both should depend on the abstraction.
+    - Abstractions should not depend on details. Details should depend on abstractions.
+
+“DRY” stands for “Don’t Repeat Yourself,” and it’s a principle in software development that promotes code reusability and maintainability.
+
+Understanding KISS
+
+KISS in my opinion can be summed up with a few key principles:
+
+    Simplicity: Strive for the simplest solution that meets the requirements. Avoid overengineering or adding unnecessary complexity.
+    Clarity: The code should be clear and easy to read. Self-explanatory variable names, concise methods, and minimal nested structures all contribute to clarity.
+    Maintainability: Simple code is easier to maintain and less prone to bugs. When a problem arises, it’s easier to diagnose and fix.
+
