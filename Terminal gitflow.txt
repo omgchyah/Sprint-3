@@ -1,0 +1,19 @@
+Terminal gitflow
+
+CREATE NEW BRANCH FROM DEVELOP BRANCH
+
+PS C:\xampp\htdocs\PHP\ProjectMVC\phpInitialDemo> git checkout -b develop
+Switched to a new branch 'develop'
+PS C:\xampp\htdocs\PHP\ProjectMVC\phpInitialDemo> git checkout -b feature/create develop
+Switched to a new branch 'feature/create'
+PS C:\xampp\htdocs\PHP\ProjectMVC\phpInitialDemo>
+
+EVERY WE MAKE A CHANGE
+Stage the files you want to include in your commit using git add <filename>. You can also use git add . to stage all modified files in the current directory.
+Write a clear and concise commit message using git commit -m "<message>". Replace <message> with a description of your changes.
+Run git commit to create the commit with the staged changes and message.
+
+TO WORK ON THE MOST RECET CODE
+Pull and Rebase: Before starting a new feature, pull the latest changes from develop using git pull origin develop and rebase your local branch on top of develop to ensure you're working with the most recent code.
+
+

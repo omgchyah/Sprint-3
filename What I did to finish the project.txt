@@ -1,0 +1,3 @@
+I started by installing Tailwind
+
+Then I edited my .htacces to make sure it landed directly cony my web/index.php file
