@@ -1,3 +1,11 @@
 I started by installing Tailwind
 
 Then I edited my .htacces to make sure it landed directly cony my web/index.php file
+
+I modified my config/routes.php files to include an array of my routes
+$routes = [
+    '/' => 'home#index',
+    'home/index' => 'home#index',
+    'user/profile' => 'user#profile',
+    // Add other routes here
+];
